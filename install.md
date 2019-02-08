@@ -6,5 +6,10 @@ cd simple-laravel-cms
 cp .env.sqlite .env
 cp db.sqlite database/database.sqlite
 composer install
+php artisan key:generate
+php artisan migrate
+# Optional for seeds
+# php artisan db:seed
+
 php artisan serve
 ```
